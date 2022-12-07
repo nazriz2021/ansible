@@ -1,6 +1,6 @@
 ---
 - name: create namespace
-  hosts: master
+  hosts: 34.125.176.201
   become: true
   become_user: root
   tasks:
