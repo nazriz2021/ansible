@@ -1,0 +1,7 @@
+---
+- name: create namespace
+  hosts: 34.125.176.201
+  become: true
+  tasks:
+  - name: create namespace
+    command: /usr/bin/kubectl create namespace {{ namespace }}
