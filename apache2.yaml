@@ -1,6 +1,6 @@
 ---
 - name: install webserver package
-  hosts: 10.182.0.5
+  hosts: 34.125.109.186
   become: true
   tasks:
   - name: install apache2 package
