@@ -5,8 +5,4 @@
   become_user: root
   tasks:
   - name: Create a k8s namespace
-    k8s:
-      name: testing
-      api_version: v1
-      kind: Namespace
-      state: present
+    command: kubectl create ns nazreen
