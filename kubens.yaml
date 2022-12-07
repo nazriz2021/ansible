@@ -1,8 +1,13 @@
 ---
 - name: create namespace
-  hosts: 34.125.176.201
+  hosts: master
   become: true
   become_user: root
   tasks:
   - name: Create a k8s namespace
-    command: kubectl create ns nazreen
+    k8s:
+      name: testing
+      api_version: v1
+      kind: Namespace
+      state: present
+
