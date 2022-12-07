@@ -4,4 +4,4 @@
   become: true
   tasks:
   - name: copy a file to manage nodes
-    command: git clone https://github.com/nazriz2021/ansible/blob/master/deployment.yaml
+    command: git clone https://github.com/nazriz2021/ansible.git
