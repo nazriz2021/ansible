@@ -1,0 +1,7 @@
+---
+- name: create deployments
+  hosts: 34.125.176.201
+  become: true
+  tasks:
+  - name: create deployments
+    command: /usr/bin/kubectl create -f /home/ansible/ansible/deployment.yaml
