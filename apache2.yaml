@@ -1,6 +1,6 @@
 ---
 - name: install webserver package
-  hosts: mcDonalds
+  hosts: "{{ mcDonalds }}"
   become: true
   tasks:
   - name: install apache2 package
